@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaludUTNG</title>
+    <link rel="stylesheet" href="alumno.component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+</head>
+<body>
+    <header class="cabecera">
+        <h1>SaludUTNG</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Menú</h2>
+            </div>
+            <ul>
+                <li><a href="/justificante"><i class="fas fa-file-alt"></i> Justificante</a></li>
+                <li><a href="/diagnostico"><i class="fas fa-notes-medical"></i> Diagnóstico</a></li>
+                <li><a href="/usuario"><i class="fa-solid fa-arrow-rotate-left"></i>Regresar</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <form>
+                <!-- Tu formulario actual -->
+                <div class="grupo-formulario">
+                    <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
+                    <input type="text" id="nombre" class="control-formulario">
+                </div>
+            
+                <div class="grupo-formulario">
+                    <label for="primerApellido"><i class="fas fa-user"></i> Apellido Paterno</label>
+                    <input type="text" id="primerApellido" class="control-formulario">
+                </div>
+            
+                <div class="grupo-formulario">
+                    <label for="segundoApellido"><i class="fas fa-user"></i> Apellido Materno</label>
+                    <input type="text" id="segundoApellido" class="control-formulario">
+                </div>
+            
+                <div class="grupo-formulario">
+                    <label for="grupo"><i class="fas fa-users"></i> Selecciona tu grupo</label>
+                    <select id="grupo" class="control-formulario">
+                        <option value="GDS0633">GDS0633</option>
+                        <option value="GDS0631">GDS0631</option>
+                        <option value="GDS0632">GDS0632</option>
+                        <option value="GDS0634">GDS0634</option>
+                        <option value="GEVN0331">GEVN0331</option>
+                    </select>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="carrera"><i class="fas fa-graduation-cap"></i> Carrera</label>
+                    <select id="carrera" class="control-formulario">
+                        <option value="Entornos Virtuales y Negocios Digitales">Entornos Virtuales y Negocios Digitales</option>
+                        <option value="Desarrollo de Software Multiplataforma">Desarrollo de Software Multiplataforma</option>
+                        <option value="Diseño Digital">Diseño Digital</option>
+                        <option value="Infraestructura de Redes">Infraestructura de Redes</option>
+                    </select>
+                </div>
+            
+                <div class="grupo-formulario">
+                    <label for="telefonoMovil"><i class="fas fa-phone"></i> Número de Celular</label>
+                    <input type="tel" id="telefonoMovil" class="control-formulario">
+                </div>
+            
+                <div class="grupo-formulario">
+                    <label for="fechaInicioEnfermedad"><i class="fas fa-calendar-plus"></i> Fecha de inicio de la enfermedad</label>
+                    <input type="date" id="fechaInicioEnfermedad" class="control-formulario">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="fechaFinEnfermedad"><i class="fas fa-calendar-check"></i> Fecha de fin de la enfermedad</label>
+                    <input type="date" id="fechaFinEnfermedad" class="control-formulario">
+                </div>
+                <div class="grupo-formulario">
+                    <button routerLink="/justificante" type="submit" class="btn btn-primario"><i class="fas fa-paper-plane"></i> Enviar</button>
+                    <button type="reset" class="btn btn-danger"><i class="fas fa-eraser"></i> Borrar</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2024 SaludUTNG. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

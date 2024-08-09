@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justificante Médico</title>
+    <link rel="stylesheet" href="justificante.component.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Menú</h2>
+            </div>
+            <ul>
+                <li><a href="/alumno"><i class="fas fa-file-alt"></i>Alumno</a></li>
+                <li><a href="/diagnostico"><i class="fas fa-notes-medical"></i> Diagnóstico</a></li>
+                <li><a href="/usuario"><i class="fa-solid fa-arrow-rotate-left"></i>Regristrarse</a></li>
+            </ul>
+        </div>
+
+        <div class="container2">
+            <div class="header">
+                <div class="header-logo">
+                </div>
+                <div class="doctor-info">
+                    <h2>JUSTIFICANTE MEDICO</h2><br>
+                    <h1>Dr. encargado de atender la solicitud</h1><br>
+                    <p>Dr(a): <input type="text" name="doctor-name" size="20"><br></p>
+                </div>
+            </div><br>
+            <div class="patient-info">
+                <p><strong>NOMBRE DEL PACIENTE:</strong> <input type="text" name="patient-name" size="50"><br>
+                <strong>NO.CONTROL DEL PACIENTE:</strong> <input type="text" name="patient-id" size="50"><br>
+                <strong>EDAD:</strong> <input type="number" name="patient-age" size="2"><br>
+                <strong>SEXO:</strong> 
+                <select id="sexo">
+                    <option value="F">F</option>
+                    <option value="M">M</option>
+                </select>
+                </p>
+            </div>
+            <div class="location-date">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+            </div><br>
+            <div class="content">
+                <p>A quien corresponda.</p>
+                <p>Por medio de la presente se hace contar que:</p>
+                <p>El(la) paciente <input type="text" name="patient-name" size="50"> no se encuentra 
+                en capacidad de realizar sus actividades laborales debido a:</p>
+                <p><input type="text" name="reason" size="100"></p>
+                <p><input type="text" name="reason-details" size="100"><br> que le requiere reposo por un
+                periodo de <input type="number" name="rest-days" size="2"> días, iniciando el día <input type="date" id="fecha-i"> y terminando el día 
+                <input type="date" id="fecha-t" >. Hacemos petición de tomar en cuenta este documento por 
+                válido para justificar las faltas durante el periodo antes mencionado.</p>
+                <p>Sírvanse el interesado hacer uso del presente para justificar su falta por enfermedad</p>
+            </div>
+            <div class="signature">
+                <p>___________________________<br>
+                        Firma del médico </p>
+            </div>
+           <div>
+                <button type="submit" class="btn btn-primary">Imprimir Justificante</button><br>
+            </div>
+        </div><br>
+        <footer class="pie-pagina">
+            <p>&copy; 2024 SaludUTNG. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
